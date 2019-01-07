@@ -29,9 +29,9 @@ group by c.CarrierCode
 order by cancelacions desc;
 
 /*6*/
-select FlightNum, sum(distance) as DistanciaTotal
+select TailNum, sum(distance) as DistanciaTotal
 from flights
-group by FlightNum
+group by TailNum
 order by DistanciaTotal desc
 limit 10;
 
